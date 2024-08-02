@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(auth, () => {
   if (user) {
     document.getElementById("mainBody").style.display = "block";
   } else {

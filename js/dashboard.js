@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged(function (user) {
+firebase.auth().onAuthStateChanged(auth, () => {
     if (user) {
         var userId = firebase.auth().currentUser.uid;
         const ref = firebase.database().ref("userData/" + userId);

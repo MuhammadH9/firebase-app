@@ -15,7 +15,7 @@ window.addEventListener('load', async e => {
 })
 
 async function upadteSources() {
-    const res = await fetch(`https://newsapi.org/v1/sources`);
+    const res = await fetch('https://fakestoreapi.com/products/1');
     const json = await res.json()
 
 
